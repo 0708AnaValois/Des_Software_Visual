@@ -1,0 +1,15 @@
+### Requisitar o usuário
+GET https://localhost:5001/api/usuario/listar
+
+### Listar um usuario
+POST https://localhost:5001/api/usuario/buscar/ana@nana.com
+
+### Cadastrar usuario
+POST https://localhost:5001/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+    "login" : "ana@nana.com",
+    "senha" : "senha"
+}
+
