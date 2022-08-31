@@ -1,3 +1,7 @@
+//Recebe um único objeto, só começa com {} - JSON - Notação de Objeto em JS 
+//Lado esquerdo: atributo, aspas duplas
+//Lado direito: valor e antes do valor vem os dois pontos aka : 
+
 {
     "login" : "ana@nana.com",
     "senha" : "senha",
@@ -7,4 +11,23 @@
 }
 
 
+//Ou recebe vários objetos
 
+[
+    {
+        "login" : "ana@nana.com",
+        "senha" : "senha",
+        "acessos" : 554,
+        "avaliacao" : 5.4,
+        "ativo" : true
+    },
+    {
+        "login" : "ana@nana.com",
+        "senha" : "senha",
+        "acessos" : 554,
+        "avaliacao" : 5.4,
+        "ativo" : true
+    }
+]
+//Array de objetos começa com []  e daí dentro vem {} e se for mais de um array, coloca
+//uma vírgula entre os {}
