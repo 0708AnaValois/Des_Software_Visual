@@ -17,18 +17,17 @@ namespace API.Controllers
         [Route("listar")]
         public IActionResult Listar()
         {
-            Usuario usuario = new Usuario();
-        
-        
-            return Ok(usuario);
+            
+            return Ok(usuarios);
         }
 
         //POST: /api/usuario/cadastrar
         [HttpPost]
-        [Route ("Cadastrar")]
+        [Route ("cadastrar")]
         public IActionResult Cadastrar([FromBody]Usuario usuario)
         {
-            return Create("", usuario);
+            usuarios.Add(usuario);
+            return Created("", usuario);
         }
 
         [HttpGet]
